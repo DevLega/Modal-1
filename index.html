@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <button class="btn-open" data-modal-open>OPEN</button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn" data-modal-close>CLOSE</button>
+            <form>
+                <div>
+                    <label>
+                        Username
+                        <input type="name" name="name" required minlength="6">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Password
+                        <input type="password" name="password" required minlength="11">
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
